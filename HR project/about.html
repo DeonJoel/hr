@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Robto',sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+            background-size: cover;
+            background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px; /* Adjusted size of the logo */
+    cursor: pointer;
+    margin-right: auto; /* Adjusted to move logo to the left */
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(48, 215, 241);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+        .heading{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .heading h1{
+            font-size: 50px;
+            color: #fff;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .heading h1::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(48, 215, 241);   
+        }
+        .heading p{
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 35px;
+        }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .about-image{
+            flex: 1;
+            margin-right: 40px;
+            overflow: hidden;
+        }
+        .about-image img{
+            max-width: 95%;
+            height: auto;
+            display: block;
+            transition: 0.5s ease;
+        }
+        .about-image:hover img{
+            transform: scale(1.2);
+        }
+        .about-content{
+            flex: 1;
+
+        }
+        .about-content h2{
+            font-size: 23px;
+            color: #fff;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .about-content h2::after{
+            content: "";
+            position: absolute;
+            width: 75%;
+            height: 4px;
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(48, 215, 241);   
+        }
+        .about-content p{
+            font-size: 18px;
+            line-height: 1.5;
+            color: #fff;
+        }
+        .about-content ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .about-content li {
+            list-style: disc;
+            margin-bottom: 8px;
+            color: #fff;
+            font-size: 18px;
+        }
+        @media screen and (max-width: 768px){
+            .heading{
+                padding: 0px 20px;
+            }
+            .heading h1{
+                font-size: 36px;
+            }
+            .heading p{
+                font-size: 17px;
+                margin-bottom: 0px;
+            }
+            .container{
+                padding: 0px;
+            }
+            .about{
+                padding: 20px;
+                flex-direction: column;
+            }
+            .about-image{
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+            .about-content p{
+                padding: 0px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo1.png" alt="logo" class="logo">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Attendance.html">Attendance</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+    <div class="heading">
+        <h1>About us</h1>
+        <p>
+            "In order to build a rewarding employee experience,<br> you need to understand what matters most to your pepole
+        </p>
+
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="about1.jpg">
+            </div>
+            <div class="about-content">
+                <h2><b>STORY</b></h2>
+                <p>The history of human resources began in the early 1900s. 
+                    HR has changed a lot, and today HR is strategic business partner. 
+                    The HR department has been around since early 1900s, and it's changed a lot—from managing payroll, 
+                    to enforcing equality laws, to the modern strategic business partner it is today.</p>
+            </div>
+            
+        </section>
+        <section class="about">
+            <div class="about-content">
+                <h2><b>MISSION</b></h2>
+                <p>It is the mission of the human resources department to provide effective human resource management by developing and implementing policies, 
+                    programs and services that contribute to the attainment of corporate and employee goals by: 
+                    Properly balancing the needs of the employees and the needs of the company</p>
+            </div>
+            <div class="about-image">
+                <img src="about2.jpg">
+            </div>
+        </section>
+        <section class="about">
+            <div class="about-image">
+                <img src="about3.jpg">
+            </div>
+            <div class="about-content">
+                <h2><b>TEAM</b></h2>
+                <p>The HR Team is focused on helping you succeed by taking care of the things that may be distracting you from the bigger picture.
+                    <br>Meet our team of professionals and learn more about our inspired HR solutions that respond to every facet of your business.
+                        <ul>
+                        <li>Anagha Bhat</li>
+                        <li>S.Hemashree</li>
+                        <li>Deeksha Amin</li>
+                        </ul></p>
+            </div>
+            
+        </section>
+    </div>
+</body>
+</html>
